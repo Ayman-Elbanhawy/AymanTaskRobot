@@ -1,0 +1,29 @@
+https://github.com/microsoft/TaskWeaver
+pip install -r requirements.txt
+pip install langchain
+pip install tabulate
+pip install yfinance
+pip install statsmodels
+pip install -U chainlit
+
+# assume you are in the cloned TaskWeaver folder
+clear ; python -m taskweaver -p ./project/
+
+best way to run is: 
+first uninstall if you have a newer version as it will have errors:
+pip uninstall chainlit -y
+then install
+chainlit run app.py --port 8500
+
+
+or Using UI:
+
+Install the chainlit package by pip install -U "chainlit<1.1.300" if you don't have it in your environment.
+you can do:
+pip install -U "chainlit<1.1.300"
+
+
+# assume you are in the TaskWeaver folder
+cd playground/UI/
+# make sure you are in playground/UI/ folder
+chainlit run app.py --port 8500
